@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<section>
+    <div class="flex items-center py-4">
+        <!-- The left line -->
+        <div class="flex-grow h-px bg-gray-400"></div>
+
+        <!-- Your text here -->
+        <span class="flex-shrink text-xl text-gray-300 font-semibold px-4 italic font-Gentium">{{ .Section }}
+        </span>
+
+        <!-- The right line -->
+        <div class="flex-grow h-px bg-gray-400"></div>
+    </div>
+    {{ range .Pages }}
+    <div class="transform-gpu transition">
+        <a href="{{ .Permalink }}"
+            class="my-2 border border-slate-200 rounded-md p-5 shadow-sm hover:bg-slate-100 dark:bg-gray-800        dark:border-slate-600 transition-colors hover:delay-100 hover:dark:bg-gray-700 block">
+            <h5 class="font-semibold text-lg text-slate-800 dark:text-slate-300">{{ .Title }}</h5>
+            <small class="text-xs text-slate-700 dark:text-slate-300">🗓️ {{ .Date | time.Format ":date_long" }}</small>
+            <p class="text-sm text-slate-700 mt-2 dark:text-slate-300">{{ or .Params.desc .Summary }}</p>
+        </a>
+    </div>
+    {{ end }}
+</section>
+
+{{ end }}

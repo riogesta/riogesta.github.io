@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Riogesta's"
+
+theme = "v1"
+
+summaryLength = 10

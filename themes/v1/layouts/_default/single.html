@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="max-w-screen-sm m-auto my-4 font-Inter">
+    <article>
+        <h2 class="font-bold text-4xl font-Gentium mb-2">{{ .Title }}</h2>
+        <p class="">🗓️ {{ .Date | time.Format ":date_long" }}</p>
+        <hr>
+        <section>
+            <strong>Contents :</strong>
+            {{ .TableOfContents }}
+        </section>
+        <hr>
+        <div class="card">
+            <div class="card-body">
+                {{ .Content }}
+            </div>
+        </div>
+
+    </article>
+</div>
+
+{{ end }}

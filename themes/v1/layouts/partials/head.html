@@ -1,0 +1,68 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Inter: ['Inter'],
+                        Gentium: ['Gentium Plus'],
+                        mono: ['JetBrains Mono']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        hr {
+            @apply my-3;
+        }
+
+        h2 {
+            @apply font-bold text-3xl font-Gentium mt-5 mb-2;
+        }
+
+        h3 {
+            @apply font-bold text-2xl font-Gentium mt-3;
+        }
+
+        h4 {
+            @apply font-bold text-xl font-Gentium mt-2
+        }
+
+        div .highlight pre {
+            @apply rounded-xl py-2 px-4;
+        }
+
+        ul > li {
+            @apply ml-7 list-disc;
+        }
+
+        ol > li {
+            @apply ml-5 list-decimal;
+        }
+
+        sup > a {
+            @apply text-sky-700 dark:text-sky-600;
+        }
+
+        a {
+            @apply text-sky-700 dark:text-sky-400;
+        }
+
+        p {
+            @apply my-3;
+        }
+
+    </style>
+</head>
