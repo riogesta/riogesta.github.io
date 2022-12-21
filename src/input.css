@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+    @apply my-3;
+}
+
+h2 {
+    @apply font-bold text-3xl font-gentium mt-5 -mb-1;
+}
+
+h3 {
+    @apply font-bold text-2xl font-gentium mt-2 -mb-1;
+}
+
+h4 {
+    @apply font-bold text-xl font-gentium mt-2
+}
+
+/* code block */
+div.highlight {
+    @apply text-sm rounded-md p-1 bg-[#272822];
+}
+/* ~~ */
+
+ul > li {
+    @apply ml-7 list-disc;
+}
+
+ol > li {
+    @apply ml-5 list-decimal;
+}
+
+sup > a {
+    @apply text-sky-700 dark:text-sky-600;
+}
+
+a {
+    @apply text-sky-700 dark:text-sky-400;
+}
+
+p {
+    @apply my-3;
+}
