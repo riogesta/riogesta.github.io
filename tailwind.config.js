@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter'],
-        gentium: ['Gentium Plus'],
+        "noto-serif": ['Noto Serif'],
         mono: ['JetBrains Mono']
       },
     },
