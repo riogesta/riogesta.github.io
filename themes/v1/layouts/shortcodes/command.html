@@ -1,13 +1,17 @@
-<div class="-mt-2 border border-gray-500 dark:rounded-md">
-    <div class="border-b rounded-t-md px-2 dark:bg-gray-800 border-gray-500">
-        <small class="text-gray-400 block">Command</small>
+<div class="-mt-2 border border-gray-500 dark:border-gray-500 rounded-lg dark:rounded-md">
+    <div class="border-b rounded-t-md px-2 dark:bg-gray-800 border-gray-500 bg-gray-900">
+        <small class="text-slate-200 font-medium dark:text-gray-400 block">Command</small>
     </div>
-    <div class="dark:bg-gray-800 rounded-b-md px-2 p-1 flex text-sm font-mono">
-        <div class="block w-4 text-gray-400">
-            $
+    <div class="bg-gray-800 dark:bg-gray-800 rounded-b-md px-2 p-1 text-sm font-mono">
+        {{ range .Params }}
+        <div class="flex">
+            <div class="text-gray-500 dark:text-slate-500 dark:text-gray-400">
+                <span class="mr-2">$</span>
+            </div>
+            <div class="text-slate-200">
+                {{ . }}
+            </div>
         </div>
-        <div class="block">
-            {{ .Get 0 }}
-        </div>
+        {{ end }}
     </div>
 </div>
