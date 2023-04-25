@@ -38,7 +38,7 @@ ul > li {
 }
 
 ol > li {
-    @apply ml-5 list-decimal;
+    @apply ml-5 list-decimal -mb-3;
 }
 
 sup > a {
